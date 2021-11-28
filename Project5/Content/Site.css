@@ -69,6 +69,16 @@ textarea {
     background-color: aliceblue;
 
 }
+
+.member-login-box {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+    background-color: aliceblue;
+}
+
 .login-words{
     position: relative;
     float: left;
@@ -83,20 +93,22 @@ textarea {
 .login-username-area{
     padding-top: 10px;
     padding-left: 100px;
-    width: 100%;
+    width: 80%;
     height: 100px;
     position: relative;
     float: left;
-
+    top: 0px;
+    left: 0px;
 }
 
 .login-password-area {
     padding-left: 100px;
-    width: 100%;
+    width: 80%;
     height: 100px;
     position: relative;
     float: left;
-
+    top: 0px;
+    left: 0px;
 }
 
 .login-submit-area {
@@ -117,6 +129,14 @@ textarea {
     margin-left: 200px;
     width: 100px;
     height: 25px;
+}
+
+.no-account{
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: 50px;
 }
 
 /******************** LOG IN PAGE END ***************/

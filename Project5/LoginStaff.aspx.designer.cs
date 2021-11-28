@@ -11,52 +11,34 @@ namespace Project5
 {
 
 
-    public partial class Contact
+    public partial class WebForm1
     {
 
         /// <summary>
-        /// Label1 control.
+        /// StaffLoginUsernameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox StaffLoginUsernameTextBox;
 
         /// <summary>
-        /// Label2 control.
+        /// StaffLoginPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox StaffLoginPasswordTextBox;
 
         /// <summary>
-        /// SubmitStaff control.
+        /// StaffLoginSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitStaff;
-
-        /// <summary>
-        /// staffUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox staffUser;
-
-        /// <summary>
-        /// StaffPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StaffPass;
+        protected global::System.Web.UI.WebControls.Button StaffLoginSubmitButton;
     }
 }

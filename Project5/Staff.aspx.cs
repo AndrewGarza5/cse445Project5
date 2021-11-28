@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Project5
 {
@@ -16,7 +19,8 @@ namespace Project5
 
         protected void SubmitStaff_Click(object sender, EventArgs e)
         {
-            //create xml file if there isnt one
+
+            /*//create xml file if there isnt one
             if (!File.Exists("Staff.xml"))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
@@ -50,6 +54,7 @@ namespace Project5
                    new XElement("Username", staffUser.Text),
                    new XElement("Password", PassUser.Text)));
                 xDocument.Save("Staff.xml");
-            }
+            }*/
+        }
     }
 }
