@@ -11,52 +11,34 @@ namespace Project5
 {
 
 
-    public partial class Contact
+    public partial class About
     {
 
         /// <summary>
-        /// Label1 control.
+        /// MemberSignupUsernameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox MemberSignupUsernameTextBox;
 
         /// <summary>
-        /// Label2 control.
+        /// MemberSignupPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox MemberSignupPasswordTextBox;
 
         /// <summary>
-        /// SubmitStaff control.
+        /// MemberSignupSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitStaff;
-
-        /// <summary>
-        /// staffUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox staffUser;
-
-        /// <summary>
-        /// StaffPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StaffPass;
+        protected global::System.Web.UI.WebControls.Button MemberSignupSubmitButton;
     }
 }

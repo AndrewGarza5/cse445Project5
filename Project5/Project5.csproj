@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LoginStaff.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="Staff.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -124,10 +125,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Login.aspx" />
-    <None Include="Member.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <Content Include="SignupMember.aspx" />
+    <Content Include="LoginMember.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -165,6 +164,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="LoginStaff.aspx.cs">
+      <DependentUpon>LoginStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginStaff.aspx.designer.cs">
+      <DependentUpon>LoginStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -212,12 +218,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="SignupMember.aspx.cs">
+      <DependentUpon>SignupMember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="SignupMember.aspx.designer.cs">
+      <DependentUpon>SignupMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMember.aspx.cs">
+      <DependentUpon>LoginMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMember.aspx.designer.cs">
+      <DependentUpon>LoginMember.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -227,9 +240,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <None Include="Staff.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

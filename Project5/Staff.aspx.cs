@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace Project5
         protected void SubmitStaff_Click(object sender, EventArgs e)
         {
 
-            //create xml file if there isnt one
+            /*//create xml file if there isnt one
             if (!File.Exists("Staff.xml"))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
@@ -33,7 +33,7 @@ namespace Project5
 
                     xmlWriter.WriteStartElement("Staff");
                     xmlWriter.WriteElementString("Username", staffUser.Text);
-                    xmlWriter.WriteElementString("Password", StaffPass.Text);
+                    xmlWriter.WriteElementString("Password", staffPass.Text);
                     xmlWriter.WriteEndElement();
 
                     xmlWriter.WriteEndElement();
@@ -52,9 +52,9 @@ namespace Project5
                 firstRow.AddBeforeSelf(
                    new XElement("Staff",
                    new XElement("Username", staffUser.Text),
-                   new XElement("Password", StaffPass.Text)));
+                   new XElement("Password", PassUser.Text)));
                 xDocument.Save("Staff.xml");
-            }
+            }*/
         }
     }
 }
