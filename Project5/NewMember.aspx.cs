@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -8,7 +9,7 @@ using System.Xml.Linq;
 
 namespace Project5
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,11 +33,19 @@ namespace Project5
             }
 
             CreateNewMember(username, password);
-        }
 
+            HttpCookie myCookies = new HttpCookie("MemberLoginCookies");
+            myCookies["MemberUsername"] =username;
+            myCookies["MemberPassword"] = password;
+            myCookies.Expires = DateTime.Now.AddMinutes(10);
+            Response.Cookies.Add(myCookies);
+
+            Response.Redirect("Member.aspx");
+        }
         protected void CreateNewMember(string username, string password)
         {
-            XDocument xDocument = XDocument.Load("../../../Member.xml");
+            Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+            XDocument xDocument = XDocument.Load("../XML/Member.xml");
             XElement root = xDocument.Element("Root");
             IEnumerable<XElement> rows = root.Descendants("Member");
             XElement firstRow = rows.First();
@@ -44,7 +53,8 @@ namespace Project5
                new XElement("Member",
                new XElement("Username", username),
                new XElement("Password", password)));
-            xDocument.Save("../../../Member.xml");
+            xDocument.Save("../XML/Member.xml");
         }
+
     }
 }

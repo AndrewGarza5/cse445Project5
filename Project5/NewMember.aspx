@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Member sign up Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SignupMember.aspx.cs" Inherits="Project5.WebForm4" %>
+﻿<%@ Page Title="Member sign up Page" Language="C#"  MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NewMember.aspx.cs" Inherits="Project5.WebForm2" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <div class="invisible-space"></div>

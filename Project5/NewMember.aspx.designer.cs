@@ -11,7 +11,7 @@ namespace Project5
 {
 
 
-    public partial class WebForm4
+    public partial class WebForm2
     {
 
         /// <summary>

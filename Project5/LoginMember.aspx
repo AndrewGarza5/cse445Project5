@@ -18,7 +18,7 @@
                  <asp:Button ID="MemberLoginSubmitButton" class="login-submit-button" runat="server" Text="Submit" OnClick="MemberLoginSubmitButton_Click" />
             </div>
             <div class="no-account">
-                <a href="SignupMember.aspx">Don't have an account? Create one here!</a>
+                <a href="NewMember.aspx">Don't have an account? Create one here!</a>
             </div>
             <asp:Label ID="MemberLoginErrorMessage" runat="server" BorderStyle="None" BorderWidth="0px" Font-Size="20px" ForeColor="Red" Width="251px"></asp:Label>
         </div>
