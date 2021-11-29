@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using PassEncrypt;
 
 namespace Project5
 {
@@ -36,6 +37,7 @@ namespace Project5
 
         protected bool CheckIfMemberExists(string username, string password)
         {
+            password = decrypt.decryptPass(password);
             XmlDataDocument xmldoc = new XmlDataDocument();
             XmlNodeList xmlnode;
             Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
