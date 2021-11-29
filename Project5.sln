@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5", "Project5\Project5.csproj", "{580CBB53-BBA0-4616-B8DA-5597BF85523F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassEncrypt", "PassEncrypt\PassEncrypt.csproj", "{349490A1-1F00-48C6-BF73-B3D392AFC731}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{580CBB53-BBA0-4616-B8DA-5597BF85523F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{580CBB53-BBA0-4616-B8DA-5597BF85523F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{580CBB53-BBA0-4616-B8DA-5597BF85523F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349490A1-1F00-48C6-BF73-B3D392AFC731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349490A1-1F00-48C6-BF73-B3D392AFC731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349490A1-1F00-48C6-BF73-B3D392AFC731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349490A1-1F00-48C6-BF73-B3D392AFC731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

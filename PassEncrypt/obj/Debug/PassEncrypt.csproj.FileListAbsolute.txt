@@ -4,3 +4,9 @@ C:\Users\reann\OneDrive\Desktop\New folder\PassEncrypt\bin\Debug\PassEncrypt.dll
 C:\Users\reann\OneDrive\Desktop\New folder\PassEncrypt\bin\Debug\PassEncrypt.pdb
 C:\Users\reann\OneDrive\Desktop\New folder\PassEncrypt\obj\Debug\PassEncrypt.dll
 C:\Users\reann\OneDrive\Desktop\New folder\PassEncrypt\obj\Debug\PassEncrypt.pdb
+C:\Users\Andy\Desktop\p5\PassEncrypt\bin\Debug\PassEncrypt.dll
+C:\Users\Andy\Desktop\p5\PassEncrypt\bin\Debug\PassEncrypt.pdb
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Debug\PassEncrypt.csproj.AssemblyReference.cache
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Debug\PassEncrypt.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Debug\PassEncrypt.dll
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Debug\PassEncrypt.pdb

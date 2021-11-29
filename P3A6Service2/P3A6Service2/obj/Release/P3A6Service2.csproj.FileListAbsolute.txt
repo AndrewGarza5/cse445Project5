@@ -1,0 +1,12 @@
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\P3A6Service2.dll.config
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\P3A6Service2.dll
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\P3A6Service2.pdb
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\Newtonsoft.Json.dll
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\System.Net.Http.Formatting.dll
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\Newtonsoft.Json.xml
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\bin\System.Net.Http.Formatting.xml
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\obj\Release\P3A6Service2.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\obj\Release\P3A6Service2.csproj.CopyComplete
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\obj\Release\P3A6Service2.dll
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\obj\Release\P3A6Service2.pdb
+C:\Users\Andy\Desktop\445\P3A6Service2\P3A6Service2\P3A6Service2\obj\Release\P3A6Service2.csproj.AssemblyReference.cache

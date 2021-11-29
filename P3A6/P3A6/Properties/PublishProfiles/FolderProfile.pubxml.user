@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Andy\Desktop</_PublishTargetUrl>
+    <History>True|2021-11-17T03:00:24.7388554Z;True|2021-11-16T19:34:50.4898326-07:00;True|2021-10-23T20:42:27.4249374-07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 13:33:56</publishTime>
+    </File>
+    <File Include="bin/P3A6.dll">
+      <publishTime>11/16/2021 19:34:50</publishTime>
+    </File>
+    <File Include="bin/P3A6.pdb">
+      <publishTime>11/16/2021 19:34:50</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 06:00:36</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>10/23/2021 19:42:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/16/2021 19:34:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

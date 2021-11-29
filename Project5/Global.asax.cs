@@ -17,10 +17,15 @@ namespace Project5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        void Session_Start(object sender, EventArgs e)
+        void Session_End(object sender, EventArgs e)
         {
+            HttpCookie cookiesStaff = Request.Cookies["StaffLoginCookies"];
+            cookiesStaff["StaffUsername"] = "";
+            cookiesStaff["StaffPassword"] = "";
 
-            MessageBox.Show("Have good day. This is the global event.", "Hello from team 44!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            HttpCookie cookiesMember = Request.Cookies["MemberLoginCookies"];
+            cookiesMember["MemberUsername"] = "";
+            cookiesMember["MemberPassword"] = "";
         }
     }
 }

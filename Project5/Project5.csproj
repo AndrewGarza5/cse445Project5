@@ -53,6 +53,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
@@ -108,6 +110,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\GetAudioFeatures\Service1.disco" />
+    <None Include="Connected Services\GetAudioFeatures\configuration91.svcinfo" />
+    <None Include="Connected Services\GetAudioFeatures\configuration.svcinfo" />
+    <None Include="Connected Services\GetAudioFeatures\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\GetTracks\albumTrack.disco" />
+    <None Include="Connected Services\GetTracks\configuration91.svcinfo" />
+    <None Include="Connected Services\GetTracks\configuration.svcinfo" />
+    <None Include="Connected Services\GetTracks\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="LoginStaff.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="Staff.aspx" />
@@ -130,6 +146,23 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="LoginMember.aspx" />
     <Content Include="NewMember.aspx" />
+    <None Include="Connected Services\GetAudioFeatures\Service1.wsdl" />
+    <None Include="Connected Services\GetAudioFeatures\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GetAudioFeatures\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GetTracks\albumTrack.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GetTracks\albumTrack1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GetTracks\albumTrack2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GetTracks\Service1.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -168,6 +201,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Connected Services\GetAudioFeatures\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\GetTracks\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="LoginStaff.aspx.cs">
       <DependentUpon>LoginStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,6 +300,19 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PassEncrypt\PassEncrypt.csproj">
+      <Project>{349490a1-1f00-48c6-bf73-b3d392afc731}</Project>
+      <Name>PassEncrypt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\GetAudioFeatures\" />
+    <WCFMetadataStorage Include="Connected Services\GetTracks\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

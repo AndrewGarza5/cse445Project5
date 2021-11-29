@@ -46,18 +46,19 @@ namespace Project5
         protected void CreateNewMember(string username, string password)
         {
             Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
-            XDocument xDocument = XDocument.Load("../XML/Member.xml");
+            XDocument xDocument = XDocument.Load("XML/Member.xml");
             XElement root = xDocument.Element("Root");
             IEnumerable<XElement> rows = root.Descendants("Member");
 
             //encrypt the password before adding to the xml document 
             string newPass = encrypt.encryptPass(password);
+            string newUsername = encrypt.encryptPass(username);
             XElement firstRow = rows.First();
             firstRow.AddBeforeSelf(
                new XElement("Member",
-               new XElement("Username", username),
+               new XElement("Username", newUsername),
                new XElement("Password", newPass)));
-            xDocument.Save("../XML/Member.xml");
+            xDocument.Save("XML/Member.xml");
         }
 
     }

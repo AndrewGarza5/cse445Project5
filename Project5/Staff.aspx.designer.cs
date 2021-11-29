@@ -13,5 +13,41 @@ namespace Project5
 
     public partial class Contact
     {
+
+        /// <summary>
+        /// NewStaffUsernameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NewStaffUsernameTextBox;
+
+        /// <summary>
+        /// NewStaffPasswordBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NewStaffPasswordBox;
+
+        /// <summary>
+        /// NewStaffButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NewStaffButton;
+
+        /// <summary>
+        /// StaffSignupErrorMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StaffSignupErrorMessage;
     }
 }

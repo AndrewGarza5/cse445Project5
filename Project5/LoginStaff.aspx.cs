@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PassEncrypt;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,14 +23,13 @@ namespace Project5
                 HttpCookie myCookies = new HttpCookie("StaffLoginCookies");
                 myCookies["StaffUsername"] = StaffLoginUsernameTextBox.Text;
                 myCookies["StaffPassword"] = StaffLoginPasswordTextBox.Text;
-                myCookies.Expires = DateTime.Now.AddMinutes(3);
                 Response.Cookies.Add(myCookies);
 
                 Response.Redirect("Staff.aspx");
             }
             else
             {
-                StaffLoginErrorMessage.Text = "This username or password does not exist. TO GRADERS: Username \"TA\" Password \"Cse445ta!\" works";
+                StaffLoginErrorMessage.Text = "This username or password does not exist.";
             }
         }
 
@@ -38,14 +38,14 @@ namespace Project5
             XmlDataDocument xmldoc = new XmlDataDocument();
             XmlNodeList xmlnode;
             Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
-            FileStream file = new FileStream(@"../XML/Staff.xml", FileMode.Open, FileAccess.Read);
+            FileStream file = new FileStream(@"XML/Staff.xml", FileMode.Open, FileAccess.Read);
             xmldoc.Load(file);
             xmlnode = xmldoc.GetElementsByTagName("Staff");
             for (int i = 0; i < xmlnode.Count; i++)
             {
 
-                string compareUsername = xmlnode[i].ChildNodes.Item(0).InnerText.Trim();
-                string comparePassword = xmlnode[i].ChildNodes.Item(1).InnerText.Trim();
+                string compareUsername = decrypt.decryptPass(xmlnode[i].ChildNodes.Item(0).InnerText.Trim());
+                string comparePassword = decrypt.decryptPass(xmlnode[i].ChildNodes.Item(1).InnerText.Trim());
 
                 if(username == compareUsername)
                 {

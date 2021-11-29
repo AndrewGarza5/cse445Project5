@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="49fd1a76-7ee6-4707-9e4b-6f01969d908c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://webstrar44.fulton.asu.edu/page6/albumTrack.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="albumTrack.disco" MetadataType="Disco" ID="d285d91b-a0c4-441c-ab8f-37def5bc4027" SourceId="1" SourceUrl="http://webstrar44.fulton.asu.edu/Page6/albumTrack.svc?disco" />
+    <MetadataFile FileName="albumTrack.xsd" MetadataType="Schema" ID="485d5af7-32d2-4135-a2dd-8ec68680c76a" SourceId="1" SourceUrl="http://webstrar44.fulton.asu.edu/Page6/albumTrack.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="1352be42-0222-4d7c-ad99-752f6038005a" SourceId="1" SourceUrl="http://webstrar44.fulton.asu.edu/Page6/albumTrack.svc?wsdl" />
+    <MetadataFile FileName="albumTrack1.xsd" MetadataType="Schema" ID="f8976361-5cf4-47b5-8959-04408ef0c64e" SourceId="1" SourceUrl="http://webstrar44.fulton.asu.edu/Page6/albumTrack.svc?xsd=xsd2" />
+    <MetadataFile FileName="albumTrack2.xsd" MetadataType="Schema" ID="3cbf77d7-e088-4bc4-8aa3-c1b0cd362206" SourceId="1" SourceUrl="http://webstrar44.fulton.asu.edu/Page6/albumTrack.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

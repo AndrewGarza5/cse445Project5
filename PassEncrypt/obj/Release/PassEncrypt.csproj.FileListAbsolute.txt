@@ -1,0 +1,6 @@
+C:\Users\Andy\Desktop\p5\PassEncrypt\bin\Release\PassEncrypt.dll
+C:\Users\Andy\Desktop\p5\PassEncrypt\bin\Release\PassEncrypt.pdb
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Release\PassEncrypt.csproj.AssemblyReference.cache
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Release\PassEncrypt.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Release\PassEncrypt.dll
+C:\Users\Andy\Desktop\p5\PassEncrypt\obj\Release\PassEncrypt.pdb
