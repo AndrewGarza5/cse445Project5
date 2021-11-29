@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using PassEncrypt;
 
 namespace Project5
 {
@@ -35,7 +36,7 @@ namespace Project5
             CreateNewMember(username, password);
 
             HttpCookie myCookies = new HttpCookie("MemberLoginCookies");
-            myCookies["MemberUsername"] = username;
+            myCookies["MemberUsername"] =username;
             myCookies["MemberPassword"] = password;
             myCookies.Expires = DateTime.Now.AddMinutes(10);
             Response.Cookies.Add(myCookies);
@@ -48,11 +49,14 @@ namespace Project5
             XDocument xDocument = XDocument.Load("../XML/Member.xml");
             XElement root = xDocument.Element("Root");
             IEnumerable<XElement> rows = root.Descendants("Member");
+
+            //encrypt the password before adding to the xml document 
+            string newPass = encrypt.encryptPass(password);
             XElement firstRow = rows.First();
             firstRow.AddBeforeSelf(
                new XElement("Member",
                new XElement("Username", username),
-               new XElement("Password", password)));
+               new XElement("Password", newPass)));
             xDocument.Save("../XML/Member.xml");
         }
 
