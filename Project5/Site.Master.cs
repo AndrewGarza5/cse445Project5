@@ -13,5 +13,38 @@ namespace Project5
         {
 
         }
+
+        protected void NavbarHomeButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
+
+        protected void NavbarMemberButton_Click(object sender, EventArgs e)
+        {
+            HttpCookie cookies = Request.Cookies["MemberLoginCookies"];
+            if ((cookies == null) || (cookies["MemberUsername"] == ""))
+            {
+                Response.Redirect("LoginMember.aspx");
+            }
+            else
+            {
+                Response.Redirect("Member.aspx");
+            }
+        }
+
+        protected void NavbarStaffButton_Click(object sender, EventArgs e)
+        {
+            HttpCookie cookies = Request.Cookies["StaffLoginCookies"];
+            if((cookies == null) || (cookies["StaffUsername"] == ""))
+            {
+                Response.Redirect("LoginStaff.aspx");
+            }
+            else
+            {
+                Response.Redirect("Staff.aspx");
+            }
+            
+        }
+
     }
 }

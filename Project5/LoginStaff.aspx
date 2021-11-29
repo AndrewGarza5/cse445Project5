@@ -16,10 +16,13 @@
                 <asp:TextBox ID="StaffLoginPasswordTextBox" class="login-input-boxes" runat="server"></asp:TextBox>
             </div>
             <div class="login-submit-area">
-                 <asp:Button ID="StaffLoginSubmitButton" class="login-submit-button" runat="server" Text="Submit" />
+                 <asp:Button ID="StaffLoginSubmitButton" class="login-submit-button" runat="server" Text="Submit" OnClick="StaffLoginSubmitButton_Click" />
             </div>
-        </div>
+            <asp:Label ID="StaffLoginErrorMessage" runat="server" BorderStyle="None" BorderWidth="0px" Font-Size="20px" ForeColor="Red" Width="251px"></asp:Label>
 
+
+        </div>
+    
 
 </asp:Content>
 

@@ -125,8 +125,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="SignupMember.aspx" />
     <Content Include="LoginMember.aspx" />
+    <Content Include="SignupMember.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -218,19 +218,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="SignupMember.aspx.cs">
-      <DependentUpon>SignupMember.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignupMember.aspx.designer.cs">
-      <DependentUpon>SignupMember.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LoginMember.aspx.cs">
       <DependentUpon>LoginMember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginMember.aspx.designer.cs">
       <DependentUpon>LoginMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignupMember.aspx.cs">
+      <DependentUpon>SignupMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignupMember.aspx.designer.cs">
+      <DependentUpon>SignupMember.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

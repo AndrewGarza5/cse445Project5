@@ -15,6 +15,33 @@ namespace Project5
     {
 
         /// <summary>
+        /// NavbarHomeButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NavbarHomeButton;
+
+        /// <summary>
+        /// NavbarMemberButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NavbarMemberButton;
+
+        /// <summary>
+        /// NavbarStaffButon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NavbarStaffButon;
+
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

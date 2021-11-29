@@ -141,6 +141,32 @@ textarea {
 
 /******************** LOG IN PAGE END ***************/
 
+/*** NAVBAR START***/
+
+.navbar-buttons{
+
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 100px;
+    text-align:center;
+    padding-top: 5px;
+    color: white;
+    background-color: inherit;
+}
+
+.navbar-buttons:hover {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

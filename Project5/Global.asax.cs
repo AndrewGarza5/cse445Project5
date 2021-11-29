@@ -11,11 +11,26 @@ namespace Project5
 {
     public class Global : HttpApplication
     {
-        void Application_Start(object sender, EventArgs e)
+        /// <summary>
+        /// Checks user cookies to see if they are signed in to any accounts
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void Session_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            HttpCookie cookies = Request.Cookies["StaffLoginCookies"];
+            if ((cookies == null) || (cookies["StaffUsername"] == ""))
+            {
+                System.Diagnostics.Debug.WriteLine("Tdow");
+                // Display the fact that the user is signed in as staff, member, or both at top right navbar
+
+                // CAN I USE A USER CONTROL FOR THIS????
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("ll be displayed in output window");
+                // Display "You are not signed in as a member or staff"
+            }
         }
     }
 }
