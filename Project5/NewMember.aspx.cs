@@ -35,7 +35,7 @@ namespace Project5
             CreateNewMember(username, password);
 
             HttpCookie myCookies = new HttpCookie("MemberLoginCookies");
-            myCookies["MemberUsername"] =username;
+            myCookies["MemberUsername"] = username;
             myCookies["MemberPassword"] = password;
             myCookies.Expires = DateTime.Now.AddMinutes(10);
             Response.Cookies.Add(myCookies);

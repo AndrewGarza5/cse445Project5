@@ -23,7 +23,7 @@ namespace Project5
                 HttpCookie myCookies = new HttpCookie("MemberLoginCookies");
                 myCookies["MemberUsername"] = MemberLoginUsernameTextBox.Text;
                 myCookies["MemberPassword"] = MemberLoginPasswordTextBox.Text;
-                myCookies.Expires = DateTime.Now.AddMinutes(10);
+                myCookies.Expires = DateTime.Now.AddMinutes(3);
                 Response.Cookies.Add(myCookies);
 
                 Response.Redirect("Member.aspx");

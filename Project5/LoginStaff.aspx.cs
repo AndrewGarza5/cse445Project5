@@ -22,7 +22,7 @@ namespace Project5
                 HttpCookie myCookies = new HttpCookie("StaffLoginCookies");
                 myCookies["StaffUsername"] = StaffLoginUsernameTextBox.Text;
                 myCookies["StaffPassword"] = StaffLoginPasswordTextBox.Text;
-                myCookies.Expires = DateTime.Now.AddMinutes(10);
+                myCookies.Expires = DateTime.Now.AddMinutes(3);
                 Response.Cookies.Add(myCookies);
 
                 Response.Redirect("Staff.aspx");

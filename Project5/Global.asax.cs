@@ -6,6 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Windows.Forms;
 
 namespace Project5
 {
@@ -18,19 +19,8 @@ namespace Project5
         /// <param name="e"></param>
         void Session_Start(object sender, EventArgs e)
         {
-            HttpCookie cookies = Request.Cookies["StaffLoginCookies"];
-            if ((cookies == null) || (cookies["StaffUsername"] == ""))
-            {
-                System.Diagnostics.Debug.WriteLine("Tdow");
-                // Display the fact that the user is signed in as staff, member, or both at top right navbar
 
-                // CAN I USE A USER CONTROL FOR THIS????
-            }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("ll be displayed in output window");
-                // Display "You are not signed in as a member or staff"
-            }
+            MessageBox.Show("Have good day. This is the global event.", "Hello from team 44!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
